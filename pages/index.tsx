@@ -23,7 +23,7 @@ export default function Home() {
   const encodedText = encodeURIComponent(`${text}はおしまい！`);
 
   return (
-    <>
+    <div className="bg-[#edf8ff]">
       <NextHeadSeo
       title="おにまいロゴジェネレーター"
       description="ツイッター君はおしまい！"
@@ -87,6 +87,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
