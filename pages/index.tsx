@@ -30,6 +30,9 @@ export default function Home() {
         title: "おにまいロゴジェネレーター",
         image: "https://oshimai.vercel.app/og.png",
       }}
+      twitter={{
+        card: "summary"
+      }}
     />
     <a href="https://github.com/yutakobayashidev/oshimai"  className="flex justify-end">
       <FaGithub className="text-4xl mr-6 mt-6" />
