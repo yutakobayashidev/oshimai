@@ -27,7 +27,7 @@ export default function Home() {
       description="ツイッター君はおしまい！"
       canonical="https://oshimai.vercel.app"
       og={{
-        title: "ツイッター君はおしまい！",
+        title: "おにまいロゴジェネレーター",
         image: "https://oshimai.vercel.app/og.png",
       }}
     />
