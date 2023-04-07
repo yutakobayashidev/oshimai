@@ -20,8 +20,6 @@ export default function Home() {
     }
   }, [query]);
 
-  const encodedText = encodeURIComponent(`${text}はおしまい！`);
-
   return (
     <div className="bg-[#edf8ff]">
       <NextHeadSeo
@@ -77,8 +75,8 @@ export default function Home() {
           <a
             href={
               text
-                ? `https://twitter.com/intent/tweet?text=${encodedText}`
-                : `${defaulttext}はおしまい！`
+                ? `https://twitter.com/intent/tweet?text=${encodeURIComponent(text+ "はおしまい！")}`
+                : `https://twitter.com/intent/tweet?text=${encodeURIComponent(defaulttext + "はおしまい！")}`
             }
             className="text-white mt-10 font-bold text-lg mb-5 bg-[#1da1f2] inline-flex rounded-full items-center py-2 px-4"
           >
