@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaTwitter,FaGithub } from "react-icons/fa";
 import { useRouter } from "next/router";
+import NextHeadSeo from 'next-head-seo';
 
 export default function Home() {
   const defaulttext = "ツイッター君";
@@ -23,6 +24,15 @@ export default function Home() {
 
   return (
     <>
+      <NextHeadSeo
+      title="おにまいロゴジェネレーター"
+      description="ツイッター君はおしまい！"
+      canonical="https://oshimai.vercel.app"
+      og={{
+        title: "ツイッター君はおしまい！",
+        image: "https://oshimai.vercel.app/og.png",
+      }}
+    />
     <a href="https://github.com/yutakobayashidev/oshimai"  className="flex justify-end">
       <FaGithub className="text-4xl mr-6 mt-6" />
     </a>
