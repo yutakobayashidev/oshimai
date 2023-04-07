@@ -31,7 +31,7 @@ export default function Home() {
         image: "https://oshimai.vercel.app/og.png",
       }}
       twitter={{
-        card: "summary"
+        card: "summary_large_image"
       }}
     />
     <a href="https://github.com/yutakobayashidev/oshimai"  className="flex justify-end">
