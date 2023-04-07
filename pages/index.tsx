@@ -28,10 +28,10 @@ export default function Home() {
     </a>
       <div className="flex h-screen items-center justify-center">
         <div className="text-center">
-          <h1 className="font-bold text-center mb-10 text-8xl">
+          <h1 className="font-bold text-center mb-10 md:text-8xl text-4xl">
             {text ? (
               <>
-                <div className="mb-7">
+                <div className="md:mb-7 mb-4">
                   <span className="text-[#926453]">{text}</span>
                   <span className="text-[#74aec4]">は</span>
                 </div>
