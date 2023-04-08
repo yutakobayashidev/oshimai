@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { FaTwitter,FaGithub } from "react-icons/fa";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 import { useRouter } from "next/router";
-import NextHeadSeo from 'next-head-seo';
+import NextHeadSeo from "next-head-seo";
 
 export default function Home() {
   const defaulttext = "ツイッター君";
@@ -23,20 +23,23 @@ export default function Home() {
   return (
     <div className="bg-[#edf8ff]">
       <NextHeadSeo
-      title="おにまいロゴジェネレーター"
-      description="ツイッター君はおしまい！"
-      canonical="https://oshimai.vercel.app"
-      og={{
-        title: "おにまいロゴジェネレーター",
-        image: "https://oshimai.vercel.app/og.png",
-      }}
-      twitter={{
-        card: "summary_large_image"
-      }}
-    />
-    <a href="https://github.com/yutakobayashidev/oshimai"  className="flex justify-end">
-      <FaGithub className="text-4xl mr-6 mt-6" />
-    </a>
+        title="おにまいロゴジェネレーター"
+        description="ツイッター君はおしまい！"
+        canonical="https://oshimai.vercel.app"
+        og={{
+          title: "おにまいロゴジェネレーター",
+          image: "https://oshimai.vercel.app/og.png",
+        }}
+        twitter={{
+          card: "summary_large_image",
+        }}
+      />
+      <a
+        href="https://github.com/yutakobayashidev/oshimai"
+        className="flex justify-end"
+      >
+        <FaGithub className="text-4xl mr-6 mt-6" />
+      </a>
       <div className="flex h-screen items-center justify-center">
         <div className="text-center">
           <h1 className="font-bold text-center mb-10 md:text-8xl text-4xl">
@@ -66,20 +69,24 @@ export default function Home() {
               </>
             )}
           </h1>
-          <div className="flex items-center justify-center">
+          <div className="flex flex-wrap items-center justify-center">
             <input
-              className="mr-4 resize-none rounded-md border-2 border-gray-100 bg-gray-50 px-4 py-2"
+              className="w-full md:w-auto mx-4 resize-none rounded-md border-2 border-gray-100 bg-gray-50 px-4 py-2"
               placeholder={defaulttext}
               value={text}
               onChange={handleChange}
             />
-            <div>はおしまい！</div>
+            <div className="text-center md:text-left">はおしまい！</div>
           </div>
           <a
             href={
               text
-                ? `https://twitter.com/intent/tweet?text=${encodeURIComponent(text+ "はおしまい！")}`
-                : `https://twitter.com/intent/tweet?text=${encodeURIComponent(defaulttext + "はおしまい！")}`
+                ? `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                    text + "はおしまい！"
+                  )}`
+                : `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                    defaulttext + "はおしまい！"
+                  )}`
             }
             className="text-white mt-10 font-bold text-lg mb-5 bg-[#1da1f2] inline-flex rounded-full items-center py-2 px-4"
           >
